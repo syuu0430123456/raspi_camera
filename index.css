@@ -1,1 +1,43 @@
-./index.css
+@charset "utf-8";
+*{
+    margin: 0;
+    padding: 0;
+}
+.header {
+    font-size: 22px;
+    padding: 8px 8px;
+    position: related;
+    color: #5a9e22;
+    background-color: #ced1d4;
+    transition: background-color 3.0s;
+}
+
+.header a {
+    float: right;
+    line-height: 56px;
+    color: #5a5c5f;
+    margin-left: 5px;
+}
+.header-right a:hover {
+    background-color: #e2f1ff;
+}
+.realtime-img {
+    width: 45%;
+    margin-bottom: 25px;
+    box-shadow: 2px 2px 4px #b7b7b7;
+    border-radius: 5px;
+}
+
+.pasttime-img {
+    width: 45%;
+    margin-bottom: 25px;
+    box-shadow: 2px 2px 4px #b7b7b7;
+    border-radius: 5px;
+}
+
+.footer {
+    text-align: center;
+    height: 20px;
+    background-color: white;
+    color: black
+}

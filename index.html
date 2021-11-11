@@ -1,1 +1,36 @@
-./index.html
+<head>
+    <meta charset="utf-8">
+    <title>防災情報サイト</title>
+    <link rel="stylesheet" href="index.css">
+   </head>
+   <body>
+    <div class="header">
+       <h1>防災情報サイト</h1>
+       <a href="index.html">トップ</a>
+    </div>
+    <div class="main-tenki">
+      <h2>天気予報</h2>
+    </div>
+    <div class="main-kasen">
+      <h2>河川カメラ</h2>
+      <h4 id="RealtimeClockArea">※ここに時計が表示されます。</h4>    <script>
+      function showClock1() {
+          var nowTime = new Date();
+          var nowHour = nowTime.getHours();
+          var nowMin  = nowTime.getMinutes();
+          var nowSec  = nowTime.getSeconds();
+          var msg = "現在時刻は、" + nowHour + ":" + nowMin + ":" + nowSec + " です。";
+          document.getElementById("RealtimeClockArea").innerHTML = msg;
+      }
+          setInterval('showClock1()',1000);
+      </script>
+          <p>現在の河川状況</p>
+          <img class="realtime-img" src='test.jpg' alt="現在の河川流量">
+          <p>平常時の河川状況</p>
+          <img class="pasttime-img" src='test1.jpg' alt="平常時の河川流量">
+    </div>
+    <div class="footer">
+      &copy; 2021 防災情報サイト
+    </div>
+   </body>
+  </html>
